@@ -5,6 +5,7 @@ import {
   fetchFamilyByToken,
   type FamilyStatus,
 } from "../api";
+import { SiteFooter } from "../components/SiteFooter";
 
 function formatWhen(iso: string): string {
   const d = new Date(iso);
@@ -61,6 +62,7 @@ export function StatusPage() {
       <main className="page">
         <p className="error">{error ?? "Status unavailable."}</p>
         <Link to="/">Try another PIN</Link>
+        <SiteFooter />
       </main>
     );
   }
@@ -88,6 +90,7 @@ export function StatusPage() {
         your funeral home.
       </p>
       <Link to="/">Check another PIN</Link>
+      <SiteFooter />
     </main>
   );
 }

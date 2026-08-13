@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { fetchFamilyByPin } from "../api";
+import { SiteFooter } from "../components/SiteFooter";
 
 export function HomePage() {
   const navigate = useNavigate();
@@ -52,6 +53,7 @@ export function HomePage() {
           </button>
         </form>
       </section>
+      <SiteFooter />
     </main>
   );
 }
