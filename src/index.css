@@ -8,6 +8,7 @@
   --line: #e7e5e4;
   --danger: #b42318;
   --warning: #d97706;
+  --brand-dark: #463d34;
   font-family: "Source Sans 3", system-ui, sans-serif;
   line-height: 1.5;
   color: var(--ink);

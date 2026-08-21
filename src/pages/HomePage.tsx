@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { fetchFamilyByPin } from "../api";
+import { BrandLogo } from "../components/BrandLogo";
 import { SiteFooter } from "../components/SiteFooter";
 
 export function HomePage() {
@@ -31,8 +32,7 @@ export function HomePage() {
   return (
     <main className="page">
       <section className="hero">
-        <p className="eyebrow">Cremation Tracker</p>
-        <h1>Follow your loved one’s care</h1>
+        <BrandLogo tagline="Follow your loved one’s care" />
         <p className="lede">
           Enter the PIN from the funeral home to see where things stand. No app
           download needed.

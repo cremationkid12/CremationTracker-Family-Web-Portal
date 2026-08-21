@@ -5,6 +5,7 @@ import {
   fetchFamilyByToken,
   type FamilyStatus,
 } from "../api";
+import { BrandLogo } from "../components/BrandLogo";
 import { SiteFooter } from "../components/SiteFooter";
 
 function formatWhen(iso: string): string {
@@ -52,6 +53,7 @@ export function StatusPage() {
   if (loading) {
     return (
       <main className="page">
+        <BrandLogo size="compact" />
         <p className="muted">Loading status…</p>
       </main>
     );
@@ -60,6 +62,7 @@ export function StatusPage() {
   if (error || !status) {
     return (
       <main className="page">
+        <BrandLogo size="compact" />
         <p className="error">{error ?? "Status unavailable."}</p>
         <Link to="/">Try another PIN</Link>
         <SiteFooter />
@@ -69,6 +72,7 @@ export function StatusPage() {
 
   return (
     <main className="page">
+      <BrandLogo size="compact" />
       <p className="eyebrow">{status.funeral_home_name}</p>
       <h1>{status.decedent_display_name}</h1>
       <p className="lede">

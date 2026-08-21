@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { BrandLogo } from "../components/BrandLogo";
 import { SiteFooter } from "../components/SiteFooter";
 
 export function PrivacyPage() {
   return (
     <main className="page legal-page">
-      <p className="eyebrow">Cremation Tracker</p>
+      <BrandLogo size="compact" />
       <h1>Privacy</h1>
       <p className="legal-banner">Placeholder — replace with lawyer-approved privacy policy before public launch.</p>
       <div className="legal-body">
